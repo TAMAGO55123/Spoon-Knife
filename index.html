@@ -18,5 +18,15 @@
   Sure!
 </p>
 
+<script>
+  var a = ['red','orange','yellow','green','blue','black'];
+  var b = document.querySelector('p');
+  var c = 0;
+  setInterval(function(){
+    c++;
+    c=c%b.length;
+    b.style.color=b[c];
+  },200);
+</script>
 </body>
 </html>
